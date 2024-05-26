@@ -1,0 +1,17 @@
+{
+  "name": "webgpu-wgpu-native",
+  "version": "1.0.0",
+  "homepage": "https://github.com/goopey7/webgpu-wgpu-native",
+  "description": "wgpu-native C++ webgpu distribution",
+  "license": "MIT",
+  "dependencies": [
+    {
+      "name" : "vcpkg-cmake",
+      "host" : true
+    },
+    {
+      "name" : "vcpkg-cmake-config",
+      "host" : true
+    }
+  ]
+}
