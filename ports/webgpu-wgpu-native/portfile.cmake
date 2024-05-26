@@ -3,7 +3,7 @@ vcpkg_check_linkage(ONLY_STATIC_LIBRARY)
 vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO goopey7/webgpu-wgpu-native
-    REF "43177ee"
+    REF "4a4f72a"
     SHA512 eb7d69d625b76a14896e9f81d2165f06e07a1ad2285989c3e00657ed10270ef0c6f348162737b541cd4edc7975a36f08b49b2eb37a004df2c68b6f8348e41190
     HEAD_REF master
 )
