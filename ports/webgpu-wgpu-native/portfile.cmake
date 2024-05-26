@@ -21,7 +21,7 @@ vcpkg_from_github(
 	OUT_SOURCE_PATH WEBGPU_HEADERS_SOURCE_PATH
     REPO webgpu-native/webgpu-headers
     REF "d02fec1"
-    SHA512 0
+    SHA512 ad708213b1f1b2e1896dea6b3ace28b4cf5747bed21ab45d74da24d4475482dc00cdcc220c90176ab2cdf8434818746d8aff11dbb18b3278c3380be21b978eeb
     HEAD_REF main
 )
 # Move the webgpu-headers submodule into the ffi directory of wgpu-native
