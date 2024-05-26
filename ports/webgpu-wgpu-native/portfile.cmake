@@ -8,6 +8,25 @@ vcpkg_from_github(
     HEAD_REF master
 )
 
+vcpkg_from_github(
+	OUT_SOURCE_PATH WGPU_NATIVE_SOURCE_PATH
+    REPO gfx-rs/wgpu-native
+    REF "d89e5a9"
+    SHA512 0
+    HEAD_REF trunk
+)
+file(RENAME ${WGPU_NATIVE_SOURCE_PATH} ${SOURCE_PATH}/wgpu-native)
+
+vcpkg_from_github(
+	OUT_SOURCE_PATH WEBGPU_HEADERS_SOURCE_PATH
+    REPO webgpu-native/webgpu-headers
+    REF "d02fec1"
+    SHA512 0
+    HEAD_REF main
+)
+# Move the webgpu-headers submodule into the ffi directory of wgpu-native
+file(RENAME ${WEBGPU_HEADERS_SOURCE_PATH} ${SOURCE_PATH}/wgpu-native/ffi/webgpu-headers)
+
 vcpkg_cmake_configure(
     SOURCE_PATH "${SOURCE_PATH}"
 )
