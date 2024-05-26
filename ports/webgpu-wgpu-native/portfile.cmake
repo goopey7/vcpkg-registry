@@ -4,7 +4,7 @@ vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO goopey7/webgpu-wgpu-native
     REF "3b13ace"
-    SHA512 0
+    SHA512 51fafe570d4c423c2e2076f06408a50961e916c67037e92ac3fbf2ef9cfd89871119a91426441f6bd51a1d66e892817e1fa68c8a5b95d77686a5a9d5f41fe1cb
     HEAD_REF master
 )
 
